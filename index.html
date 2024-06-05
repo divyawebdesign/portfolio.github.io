@@ -409,7 +409,7 @@
             }
         }
 
-        media screen and (max-width: 768px) {
+        @media screen and (max-width: 768px) {
     .why-choose-me-container {
         width: 100%; /* Occupy full width */
         max-width: none; /* Remove maximum width */
@@ -417,14 +417,16 @@
     }
 
     .why-choose-me-box {
-        width: 100%; /* Adjust width to occupy half the width with margins */
+        width: 100%; /* Adjust width to occupy full width */
         /* Center align with bottom margin */
     }
 
     .carousel-container {
         width: 100%; /* Occupy full width */
         max-width: none; /* Remove maximum width */
-        margin: 1000px auto; /* Center align */
+        margin: 0 auto; /* Center align */
+        position: relative; /* Ensure the carousel image moves down with other content */
+        top: 20px; /* Adjust the distance from the top */
     }
 }
 
