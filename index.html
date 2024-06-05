@@ -488,7 +488,7 @@
             text-align: center; 
             transition: opacity 0.3s, transform 0.3s; 
             z-index: 1; 
-            font-family: 'Comic Sans MS', cursive; 
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
             border: 1px solid orange;
         }
 
@@ -501,6 +501,7 @@
             transform: translateY(-10px); 
             font-size: 16px; 
             border: 1px solid white; 
+
         }
 
         .service-box:hover .explanation.left {
@@ -512,6 +513,21 @@
             left: 100%;
             transform: translateX(10px);
         }
+
+        @media screen and (max-width: 768px) {
+    .service-box {
+        width: calc(100% - 40px); /* Adjust width to occupy full width with margins */
+        margin-left: 20px; /* Add margin to align with other elements */
+        margin-right: 20px; /* Add margin to align with other elements */
+    }
+
+    .explanation {
+        width: calc(100% - 40px); /* Adjust width to occupy full width with margins */
+        left: 50%; /* Adjust alignment */
+        transform: translateX(-50%); /* Adjust alignment */
+    }
+}
+
 
         .footer {
             text-align: center; 
