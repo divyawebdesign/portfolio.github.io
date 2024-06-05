@@ -523,10 +523,23 @@
 
     .explanation {
         width: calc(100% - 40px); /* Adjust width to occupy full width with margins */
-        left: 50%; /* Adjust alignment */
-        transform: translateX(-50%); /* Adjust alignment */
+        left: 50%; /* Center horizontally */
+        transform: translateX(-50%); /* Center horizontally */
+    }
+
+    .service-box:hover .explanation.left {
+        left: 0; /* Position the explanation box to the left of the service box */
+        right: auto; /* Ensure right positioning is disabled */
+        transform: translateX(0); /* Reset transform */
+    }
+
+    .service-box:hover .explanation.right {
+        right: 0; /* Position the explanation box to the right of the service box */
+        left: auto; /* Ensure left positioning is disabled */
+        transform: translateX(0); /* Reset transform */
     }
 }
+
 
 
         .footer {
