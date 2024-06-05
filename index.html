@@ -18,7 +18,28 @@
             transition: color 0.3s;
             overflow-x: hidden;
         }
-        
+        @media screen and (max-width: 768px) {
+    /* Existing styles */
+    .navbar {
+        display: flex; /* Ensure the navbar links are displayed in a row */
+        flex-direction: column; /* Change the direction to column for stacking links */
+        align-items: center; /* Center-align the links */
+        background-color: black; /* Set background color */
+        width: 100%; /* Make sure the navbar spans the entire width */
+        padding: 0; /* Remove default padding */
+        margin-top: 50px; /* Add some margin from the top */
+    }
+
+    .navbar a {
+        width: 100%; /* Make each link occupy the full width */
+        padding: 15px 0; /* Adjust padding */
+        border-bottom: 1px solid #555; /* Add a border-bottom to separate links */
+        text-align: center; /* Center-align the text */
+    }
+
+    /* Existing styles */
+}
+
         .common-container {
             height: auto;
             background-image: url('bg1.avif');
